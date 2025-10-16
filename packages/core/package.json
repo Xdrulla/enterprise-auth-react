@@ -1,14 +1,38 @@
 {
   "name": "enterprise-auth-react",
-  "version": "0.1.0",
-  "description": "Enterprise-grade authentication toolkit for React with Keycloak",
+  "version": "0.1.1",
+  "description": "Enterprise-grade authentication toolkit for React with Keycloak SSO integration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": ["keycloak", "react", "authentication", "sso", "enterprise"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/enterprise-auth-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/enterprise-auth-react/issues"
+  },
+  "homepage": "https://github.com/yourusername/enterprise-auth-react#readme",
+  "keywords": [
+    "keycloak",
+    "react",
+    "authentication",
+    "sso",
+    "enterprise",
+    "oauth2",
+    "oidc",
+    "jwt",
+    "typescript",
+    "hooks"
+  ],
   "author": "Luan Drulla",
   "license": "MIT",
   "peerDependencies": {
