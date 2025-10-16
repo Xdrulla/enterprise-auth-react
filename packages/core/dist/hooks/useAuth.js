@@ -1,6 +1,10 @@
 import { useKeycloak } from './useKeycloak';
-export const useAuth = (config) => {
-    const { authenticated, token, login, logout, initialized } = useKeycloak(config);
+/**
+ * Simplified authentication hook
+ * Returns only essential auth state and actions
+ */
+export const useAuth = () => {
+    const { authenticated, token, login, logout, initialized } = useKeycloak();
     const isAuthenticated = initialized && authenticated;
     const isLoading = !initialized;
     return {

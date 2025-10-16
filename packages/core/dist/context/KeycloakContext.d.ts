@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import Keycloak from 'keycloak-js';
 import { KeycloakConfig } from '../types';
-interface KeycloakContextValue {
+export interface KeycloakContextValue {
     keycloak: Keycloak | null;
     initialized: boolean;
     authenticated: boolean;

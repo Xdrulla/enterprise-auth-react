@@ -1,5 +1,8 @@
-import { KeycloakConfig } from '../types';
-export declare const useAuth: (config: KeycloakConfig) => {
+/**
+ * Simplified authentication hook
+ * Returns only essential auth state and actions
+ */
+export declare const useAuth: () => {
     isAuthenticated: boolean;
     isLoading: boolean;
     token: string | null;

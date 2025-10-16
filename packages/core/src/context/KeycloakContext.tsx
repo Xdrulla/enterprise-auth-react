@@ -3,7 +3,7 @@ import Keycloak from 'keycloak-js';
 import { KeycloakConfig } from '../types';
 
 // Interface do Context
-interface KeycloakContextValue {
+export interface KeycloakContextValue {
   keycloak: Keycloak | null;
   initialized: boolean;
   authenticated: boolean;
