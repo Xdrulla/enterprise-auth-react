@@ -8,5 +8,9 @@ export { useAuth } from './hooks/useAuth';
 // Components
 export { ProtectedRoute } from './components/ProtectedRoute';
 
+// Utils
+export { tokenManager } from './utils/tokenManager';
+export { createApiInterceptor } from './utils/apiInterceptor';
+
 // Types
 export type { KeycloakConfig, KeycloakHookResult } from './types';
